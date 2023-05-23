@@ -1,0 +1,17 @@
+{
+    "name": "lesson-2",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "Second Lesson on JavaScript",
+    "main": "index.js",
+    "scripts": {
+        "test": "node tests.js"
+    },
+    "author": "Nils Twelker",
+    "license": "ISC",
+    "devDependencies": {
+        "vite": "^4.2.1",
+        "vitest": "^0.29.3",
+        "playwright": "^1.34.1"
+    }
+}

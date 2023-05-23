@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1 id="title">My Website</h1>
+        <div id="remove">Remove me!</div>
+        <script>
+            // Create a new <p> (Paragraph) element and add it to the body of the page
+            let newElement = document.createElement("p");
+            newElement.textContent = "This is a new paragraph";
+            document.body.appendChild(newElement);
+
+            // Remove the element with id "remove"
+            let removeElement = document.getElementById("remove");
+            document.body.removeChild(removeElement);
+
+            // Create a function that turns an array of strings into a list of <li> (List Item) elements
+            // Example input: ["Hello", "World"]
+            // Example output:
+            // <ul>
+            //     <li>Hello</li>
+            //     <li>World</li>
+            // </ul>
+            function createList(array) {
+                let list = document.createElement("ul");
+                for (let i = 0; i < array.length; i++) {
+                    let listItem = document.createElement("li");
+                    listItem.textContent = array[i];
+                    list.appendChild(listItem);
+                }
+                return list;
+            }
+
+            // Now use the function to create a list of the following strings:
+            // "Hello", "World", "How", "Are", "You"
+            let list = createList(["Hello", "World", "How", "Are", "You"]);
+
+            // Add the list to the body of the page
+            document.body.appendChild(list);
+        </script>
+    </body>
+</html>

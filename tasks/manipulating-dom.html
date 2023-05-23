@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1>My Website</h1>
+        <article>
+            <h2>Article 1</h2>
+            <p>This is the first article</p>
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <p>This is the second article</p>
+        </article>
+        <script>
+            let articles = document.querySelectorAll("article");
+
+            // Change the title of the first article to "This is the first article"
+            articles[0].querySelector("h2").innerText = "This is the first article";
+
+            // Make the first article's text color blue
+            articles[0].style.color = "blue";
+
+            // Make the second article's background color yellow
+            articles[1].style.backgroundColor = "yellow";
+        </script>
+    </body>
+</html>

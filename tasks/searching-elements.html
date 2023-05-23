@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            .green {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">My Website</h1>
+        <div>
+            <article>
+                <h2 class="green">Article 1</h2>
+                <p>This is the <b>first</b> article</p>
+                <p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h2>Article 2</h2>
+                <p class="green">This is the second article</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,sed diam voluptua.
+                    At vero eos et accusam et <b>justo</b> duo dolores et ea rebum.
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur <b>sadipscing</b> elitr,
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+            </article>
+        </div>
+        <script>
+            // Get the title of the page
+            let title = document.getElementById("title");
+
+            // Get all elements with class "green"
+            let greenElements = document.getElementsByClassName("green");
+
+            // Get the first article
+            let firstArticle = document.querySelector("article");
+
+            // Get the title of the second article
+            let secondArticleTitle = document.querySelector("article").nextElementSibling.querySelector("h2");
+
+            // Get all <li> elements from the first article
+            let firstArticleListItems = document.querySelector("article").querySelectorAll("li");
+
+            // Get all <b> elements from the second article
+            let secondArticleBoldElements = document.querySelector("article").nextElementSibling.querySelectorAll("b");
+
+
+
+
+
+
+
+            
+            // This function is for testing purposes, do not change it    
+            function getElements() {
+                return {
+                    title,
+                    greenElements,
+                    firstArticle,
+                    secondArticleTitle,
+                    firstArticleListItems,
+                    secondArticleBoldElements
+                }
+            }
+        </script>
+    </body>
+</html>

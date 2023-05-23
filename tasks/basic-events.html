@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            #my-balls {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .ball {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: red;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Website</h1>
+        <button id="say-hello">Say Hello</button>
+        <button id="add-ball">Add Ball</button>
+        <div id="my-balls"></div>
+        <script>
+            let myButton = document.getElementById("say-hello");
+            let addBallButton = document.getElementById("add-ball");
+            let myBalls = document.getElementById("my-balls");
+
+            myButton.addEventListener("click", function () {
+                console.log("Hello");
+            });
+
+            addBallButton.addEventListener("click", function () {
+                let newBall = document.createElement("div");
+                newBall.classList.add("ball");
+                myBalls.appendChild(newBall);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My ToDo List</title>
+        <style>
+            #my-todo-list {
+                display: flex;
+                flex-direction: column;
+                max-width: 500px;
+            }
+
+            #my-todo-list div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 5px;
+                padding: 5px;
+                background-color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My ToDo List</h1>
+        <button id="add-item">Add item</button>
+        <input id="item-text"></input>
+
+        <div id="my-todo-list"></div>
+
+        <script>
+            let addButton = document.getElementById("add-item");
+            let addInput = document.getElementById("item-text");
+
+            addButton.addEventListener("click", function () {
+                let newElement = document.createElement("div");
+                newElement.textContent = addInput.value;
+
+                let removeButton = document.createElement("button");
+                removeButton.textContent = "Remove";
+                removeButton.addEventListener("click", function () {
+                    document.getElementById("my-todo-list").removeChild(newElement);
+                });
+
+                newElement.appendChild(removeButton);
+                
+                document.getElementById("my-todo-list").appendChild(newElement);
+            });
+        </script>
+    </body>
+</html>
