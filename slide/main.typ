@@ -282,10 +282,10 @@ myButton.addEventListener("click", function () {
 == Tasks and Points
 Goal is to get 100 Points.
 #columns(2, [
-- `array-methods` (25 Points)
-- `basic-objects` (25 Points)
-- `in-keyword` (25 Points)
-- `object-references` (25 Points)
-- `graph-calculator` (50 Points)
-- `login-system` (50 Points)
+- `adding-removing` (35 Points)
+- `basic-events` (35 Points)
+- `hello-browser` (20 Points)
+- `manipulating-dom` (35 Points)
+- `searching-elements` (35 Points)
+- `to-do-list` (65 Points)
 ])
