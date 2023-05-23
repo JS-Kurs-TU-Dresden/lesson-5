@@ -23,19 +23,24 @@
         <button id="add-ball">Add Ball</button>
         <div id="my-balls"></div>
         <script>
-            let myButton = document.getElementById("say-hello");
-            let addBallButton = document.getElementById("add-ball");
-            let myBalls = document.getElementById("my-balls");
+            // Access the button with the id "say-hello"
+            let sayHelloButton = document.___;
 
-            myButton.addEventListener("click", function () {
-                console.log("Hello");
-            });
+            // Access the button with the id "add-ball" and the div with the id "my-balls"
+            let addBallButton = document.___;
+            let myBalls = ___;
 
-            addBallButton.addEventListener("click", function () {
+            // Print "Hello" to the console when the "say-hello" button is clicked
+            sayHelloButton.onclick = ___;
+
+            addBallButton.onclick = function () {
                 let newBall = document.createElement("div");
-                newBall.classList.add("ball");
+
+                // Add the class "ball" to the new ball
+                newBall.___;
+
                 myBalls.appendChild(newBall);
-            });
+            };
         </script>
     </body>
 </html>

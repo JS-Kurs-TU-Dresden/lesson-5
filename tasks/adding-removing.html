@@ -7,14 +7,16 @@
         <h1 id="title">My Website</h1>
         <div id="remove">Remove me!</div>
         <script>
+            // Replace all ___ with the correct JavaScript to complete the task
+
             // Create a new <p> (Paragraph) element and add it to the body of the page
-            let newElement = document.createElement("p");
-            newElement.textContent = "This is a new paragraph";
-            document.body.appendChild(newElement);
+            let newElement = ___;
+            newElement.___ = "This is a new paragraph";
+            document.body.___;
 
             // Remove the element with id "remove"
-            let removeElement = document.getElementById("remove");
-            document.body.removeChild(removeElement);
+            let removeElement = ___;
+            document.body.___(removeElement);
 
             // Create a function that turns an array of strings into a list of <li> (List Item) elements
             // Example input: ["Hello", "World"]
@@ -25,11 +27,17 @@
             // </ul>
             function createList(array) {
                 let list = document.createElement("ul");
+
                 for (let i = 0; i < array.length; i++) {
-                    let listItem = document.createElement("li");
-                    listItem.textContent = array[i];
-                    list.appendChild(listItem);
+                    let listItem = ___;
+
+                    // Set the text of the list item to the current string in the array
+                    ___;
+
+                    // Add the list item to the list
+                    list.appendChild(___);
                 }
+
                 return list;
             }
 
@@ -38,7 +46,7 @@
             let list = createList(["Hello", "World", "How", "Are", "You"]);
 
             // Add the list to the body of the page
-            document.body.appendChild(list);
+            document.body.___;
         </script>
     </body>
 </html>

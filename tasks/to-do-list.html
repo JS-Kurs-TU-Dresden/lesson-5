@@ -27,23 +27,13 @@
         <div id="my-todo-list"></div>
 
         <script>
-            let addButton = document.getElementById("add-item");
-            let addInput = document.getElementById("item-text");
+            // The following things have to be done:
+            // 1. When the "Add item" button is clicked, a new item should be added to the list
+            //    The text of the item should be the text of the input field
+            //    The item should have a "Remove" button that removes the item when clicked
+            // 2. When the "Remove" button of an item is clicked, the item should be removed from the list
 
-            addButton.addEventListener("click", function () {
-                let newElement = document.createElement("div");
-                newElement.textContent = addInput.value;
-
-                let removeButton = document.createElement("button");
-                removeButton.textContent = "Remove";
-                removeButton.addEventListener("click", function () {
-                    document.getElementById("my-todo-list").removeChild(newElement);
-                });
-
-                newElement.appendChild(removeButton);
-                
-                document.getElementById("my-todo-list").appendChild(newElement);
-            });
+           
         </script>
     </body>
 </html>
